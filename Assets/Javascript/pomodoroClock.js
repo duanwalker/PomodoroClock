@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $('#start-countdown').show();
+
+  $('#start-countdown').hide();
   $("#resume").hide();
 $("#pause").show();
 
@@ -166,4 +166,6 @@ function formatTime(time) {
     hundredths = pad(time - (sec * 100) - (min * 6000), 2);
   return (min > 0 ? pad(min, 2) : "00") + ":" + pad(sec, 2) + ":" + hundredths;
 }
+$(document).ready(function() {
+
 });
